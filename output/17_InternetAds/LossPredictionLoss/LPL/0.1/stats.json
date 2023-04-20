@@ -1,0 +1,71 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "LossPredictionLoss",
+    "model": "LPL",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "optimizer": "Adam",
+    "process": {
+        "round_0": [
+            138,
+            23,
+            32,
+            23,
+            0.9047,
+            0.8139,
+            "[0.9492,0.7119]"
+        ],
+        "round_1": [
+            170,
+            55,
+            32,
+            32,
+            0.9308,
+            0.8625,
+            "[0.9633,0.82  ]"
+        ],
+        "round_2": [
+            202,
+            64,
+            32,
+            9,
+            0.9358,
+            0.8848,
+            "[0.9629,0.8286]"
+        ],
+        "round_3": [
+            234,
+            65,
+            32,
+            1,
+            0.9316,
+            0.8294,
+            "[0.9592,0.8251]"
+        ],
+        "round_4": [
+            266,
+            87,
+            32,
+            22,
+            0.9406,
+            0.8828,
+            "[0.968 ,0.8531]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.9406,
+        "F_aucpr": 0.8828,
+        "F_f1": "[0.968 ,0.8531]"
+    }
+}

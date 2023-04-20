@@ -1,0 +1,70 @@
+{
+    "dataset": "12_fault",
+    "strategy": "KCenterGreedyPCA",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            1358,
+            38,
+            32,
+            38,
+            0.6538,
+            0.5086,
+            "[0.7923,0.1638]"
+        ],
+        "round_1": [
+            1358,
+            38,
+            32,
+            0,
+            0.6571,
+            0.5039,
+            "[0.7966,0.181 ]"
+        ],
+        "round_2": [
+            1358,
+            54,
+            32,
+            16,
+            0.6576,
+            0.5124,
+            "[0.7966,0.181 ]"
+        ],
+        "round_3": [
+            1358,
+            68,
+            32,
+            14,
+            0.645,
+            0.509,
+            "[0.7987,0.1897]"
+        ],
+        "round_4": [
+            1358,
+            81,
+            32,
+            13,
+            0.6539,
+            0.5331,
+            "[0.803 ,0.2069]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6539,
+        "F_aucpr": 0.5331,
+        "F_f1": "[0.803 ,0.2069]"
+    }
+}

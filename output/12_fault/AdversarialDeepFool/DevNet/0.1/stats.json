@@ -1,0 +1,70 @@
+{
+    "dataset": "12_fault",
+    "strategy": "AdversarialDeepFool",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            1358,
+            38,
+            32,
+            38,
+            0.6538,
+            0.5086,
+            "[0.7923,0.1638]"
+        ],
+        "round_1": [
+            1358,
+            58,
+            32,
+            20,
+            0.6574,
+            0.501,
+            "[0.7966,0.181 ]"
+        ],
+        "round_2": [
+            1358,
+            76,
+            32,
+            18,
+            0.6443,
+            0.4916,
+            "[0.7966,0.181 ]"
+        ],
+        "round_3": [
+            1358,
+            104,
+            32,
+            28,
+            0.6398,
+            0.4794,
+            "[0.7944,0.1724]"
+        ],
+        "round_4": [
+            1358,
+            125,
+            32,
+            21,
+            0.6387,
+            0.4859,
+            "[0.7923,0.1638]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6387,
+        "F_aucpr": 0.4859,
+        "F_f1": "[0.7923,0.1638]"
+    }
+}

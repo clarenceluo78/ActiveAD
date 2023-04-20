@@ -1,0 +1,70 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "RandomSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "process": {
+        "round_0": [
+            1376,
+            23,
+            32,
+            23,
+            0.6059,
+            0.359,
+            "[0.9096,0.3286]"
+        ],
+        "round_1": [
+            1376,
+            30,
+            32,
+            7,
+            0.5991,
+            0.3437,
+            "[0.9077,0.3143]"
+        ],
+        "round_2": [
+            1376,
+            35,
+            32,
+            5,
+            0.592,
+            0.3372,
+            "[0.9077,0.3143]"
+        ],
+        "round_3": [
+            1376,
+            41,
+            32,
+            6,
+            0.6068,
+            0.359,
+            "[0.9115,0.3429]"
+        ],
+        "round_4": [
+            1376,
+            49,
+            32,
+            8,
+            0.6017,
+            0.3445,
+            "[0.9058,0.3   ]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6017,
+        "F_aucpr": 0.3445,
+        "F_f1": "[0.9058,0.3   ]"
+    }
+}

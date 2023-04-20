@@ -1,0 +1,70 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "KCenterGreedy",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "process": {
+        "round_0": [
+            1376,
+            23,
+            32,
+            23,
+            0.6059,
+            0.359,
+            "[0.9096,0.3286]"
+        ],
+        "round_1": [
+            1376,
+            53,
+            32,
+            30,
+            0.668,
+            0.461,
+            "[0.9212,0.4143]"
+        ],
+        "round_2": [
+            1376,
+            80,
+            32,
+            27,
+            0.7482,
+            0.5617,
+            "[0.9212,0.4143]"
+        ],
+        "round_3": [
+            1376,
+            95,
+            32,
+            15,
+            0.7653,
+            0.5993,
+            "[0.9212,0.4143]"
+        ],
+        "round_4": [
+            1376,
+            111,
+            32,
+            16,
+            0.7903,
+            0.6383,
+            "[0.9212,0.4143]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.7903,
+        "F_aucpr": 0.6383,
+        "F_f1": "[0.9212,0.4143]"
+    }
+}

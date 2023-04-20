@@ -1,0 +1,70 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "MetaSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "process": {
+        "round_0": [
+            1376,
+            23,
+            32,
+            23,
+            0.6017,
+            0.3597,
+            "[0.9115,0.3429]"
+        ],
+        "round_1": [
+            1376,
+            86,
+            32,
+            63,
+            0.7255,
+            0.5378,
+            "[0.9212,0.4143]"
+        ],
+        "round_2": [
+            1376,
+            131,
+            32,
+            45,
+            0.7742,
+            0.6303,
+            "[0.9212,0.4143]"
+        ],
+        "round_3": [
+            1376,
+            147,
+            32,
+            16,
+            0.7986,
+            0.6631,
+            "[0.9212,0.4143]"
+        ],
+        "round_4": [
+            1376,
+            161,
+            32,
+            14,
+            0.8368,
+            0.7224,
+            "[0.9212,0.4143]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.8368,
+        "F_aucpr": 0.7224,
+        "F_f1": "[0.9212,0.4143]"
+    }
+}

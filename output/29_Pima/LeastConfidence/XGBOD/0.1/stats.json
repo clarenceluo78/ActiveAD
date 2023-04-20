@@ -1,0 +1,52 @@
+{
+    "dataset": "29_Pima",
+    "strategy": "LeastConfidence",
+    "model": "XGBOD",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 70,
+    "budget": 70,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 700,
+    "test_size": 300,
+    "all_train_outliers": 249,
+    "process": {
+        "round_0": [
+            70,
+            20,
+            32,
+            20,
+            0.8362,
+            0.7365,
+            "[0.7992,0.2131]"
+        ],
+        "round_1": [
+            102,
+            52,
+            32,
+            32,
+            0.8383,
+            0.7675,
+            "[0.7975,0.1983]"
+        ],
+        "round_2": [
+            134,
+            77,
+            32,
+            25,
+            0.8523,
+            0.7904,
+            "[0.8,0.2]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.8523,
+        "F_aucpr": 0.7904,
+        "F_f1": "[0.8,0.2]"
+    }
+}

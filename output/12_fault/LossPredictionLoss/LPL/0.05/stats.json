@@ -1,0 +1,53 @@
+{
+    "dataset": "12_fault",
+    "strategy": "LossPredictionLoss",
+    "model": "LPL",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 70,
+    "budget_ratio": 0.05,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "optimizer": "Adam",
+    "process": {
+        "round_0": [
+            136,
+            38,
+            32,
+            38,
+            0.6907,
+            0.5251,
+            "[0.749 ,0.4829]"
+        ],
+        "round_1": [
+            168,
+            60,
+            32,
+            22,
+            0.7057,
+            0.5755,
+            "[0.748 ,0.5248]"
+        ],
+        "round_2": [
+            200,
+            65,
+            32,
+            5,
+            0.7442,
+            0.6134,
+            "[0.8214,0.5399]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.7442,
+        "F_aucpr": 0.6134,
+        "F_f1": "[0.8214,0.5399]"
+    }
+}

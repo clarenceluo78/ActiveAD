@@ -1,0 +1,70 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "KMeansSamplingGPU",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "process": {
+        "round_0": [
+            1376,
+            23,
+            32,
+            23,
+            0.6059,
+            0.359,
+            "[0.9096,0.3286]"
+        ],
+        "round_1": [
+            1376,
+            30,
+            32,
+            7,
+            0.612,
+            0.3638,
+            "[0.9096,0.3286]"
+        ],
+        "round_2": [
+            1376,
+            37,
+            32,
+            7,
+            0.6154,
+            0.3665,
+            "[0.9058,0.3   ]"
+        ],
+        "round_3": [
+            1376,
+            45,
+            32,
+            8,
+            0.6221,
+            0.3791,
+            "[0.9115,0.3429]"
+        ],
+        "round_4": [
+            1376,
+            55,
+            32,
+            10,
+            0.6397,
+            0.3964,
+            "[0.9115,0.3429]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6397,
+        "F_aucpr": 0.3964,
+        "F_f1": "[0.9115,0.3429]"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "KCenterGreedyPCA",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            1038,
+            35,
+            32,
+            35,
+            0.6864,
+            0.5404,
+            "[0.8033,0.1943]"
+        ],
+        "round_1": [
+            1038,
+            42,
+            32,
+            7,
+            0.6953,
+            0.5546,
+            "[0.8061,0.2057]"
+        ],
+        "round_2": [
+            1038,
+            56,
+            32,
+            14,
+            0.6966,
+            0.5528,
+            "[0.8033,0.1943]"
+        ],
+        "round_3": [
+            1038,
+            67,
+            32,
+            11,
+            0.6868,
+            0.4743,
+            "[0.7838,0.1143]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6868,
+        "F_aucpr": 0.4743,
+        "F_f1": "[0.7838,0.1143]"
+    }
+}

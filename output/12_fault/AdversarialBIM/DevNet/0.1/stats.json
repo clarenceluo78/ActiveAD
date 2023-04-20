@@ -1,0 +1,70 @@
+{
+    "dataset": "12_fault",
+    "strategy": "AdversarialBIM",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            1358,
+            38,
+            32,
+            38,
+            0.6538,
+            0.5086,
+            "[0.7923,0.1638]"
+        ],
+        "round_1": [
+            1358,
+            54,
+            32,
+            16,
+            0.6542,
+            0.5029,
+            "[0.7944,0.1724]"
+        ],
+        "round_2": [
+            1358,
+            75,
+            32,
+            21,
+            0.6395,
+            0.4985,
+            "[0.7966,0.181 ]"
+        ],
+        "round_3": [
+            1358,
+            100,
+            32,
+            25,
+            0.6331,
+            0.4929,
+            "[0.7966,0.181 ]"
+        ],
+        "round_4": [
+            1358,
+            118,
+            32,
+            18,
+            0.6326,
+            0.4874,
+            "[0.7987,0.1897]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6326,
+        "F_aucpr": 0.4874,
+        "F_f1": "[0.7987,0.1897]"
+    }
+}

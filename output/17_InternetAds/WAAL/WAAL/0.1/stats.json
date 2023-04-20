@@ -1,0 +1,70 @@
+{
+    "dataset": "17_InternetAds",
+    "strategy": "WAAL",
+    "model": "WAAL",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 138,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 1555,
+    "train_size": 1376,
+    "test_size": 590,
+    "all_train_outliers": 258,
+    "process": {
+        "round_0": [
+            138,
+            23,
+            32,
+            23,
+            0.9148,
+            0.8383,
+            "[0.9564,0.7772]"
+        ],
+        "round_1": [
+            170,
+            38,
+            32,
+            15,
+            0.9207,
+            0.8505,
+            "[0.9554,0.7732]"
+        ],
+        "round_2": [
+            202,
+            50,
+            32,
+            12,
+            0.9243,
+            0.859,
+            "[0.9633,0.82  ]"
+        ],
+        "round_3": [
+            234,
+            63,
+            32,
+            13,
+            0.931,
+            0.8721,
+            "[0.9694,0.85  ]"
+        ],
+        "round_4": [
+            266,
+            71,
+            32,
+            8,
+            0.9374,
+            0.8792,
+            "[0.9683,0.8458]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.9374,
+        "F_aucpr": 0.8792,
+        "F_f1": "[0.9683,0.8458]"
+    }
+}

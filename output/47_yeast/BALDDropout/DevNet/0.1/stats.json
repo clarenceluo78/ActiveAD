@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "BALDDropout",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            1038,
+            35,
+            32,
+            35,
+            0.6864,
+            0.5404,
+            "[0.8033,0.1943]"
+        ],
+        "round_1": [
+            1038,
+            43,
+            32,
+            8,
+            0.6988,
+            0.5419,
+            "[0.8033,0.1943]"
+        ],
+        "round_2": [
+            1038,
+            52,
+            32,
+            9,
+            0.6959,
+            0.5261,
+            "[0.795,0.16 ]"
+        ],
+        "round_3": [
+            1038,
+            63,
+            32,
+            11,
+            0.6949,
+            0.4956,
+            "[0.7922,0.1486]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6949,
+        "F_aucpr": 0.4956,
+        "F_f1": "[0.7922,0.1486]"
+    }
+}

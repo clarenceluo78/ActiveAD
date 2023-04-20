@@ -1,0 +1,52 @@
+{
+    "dataset": "12_fault",
+    "strategy": "MetaSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 70,
+    "budget_ratio": 0.05,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            1358,
+            38,
+            32,
+            38,
+            0.6544,
+            0.5079,
+            "[0.7901,0.1552]"
+        ],
+        "round_1": [
+            1358,
+            93,
+            32,
+            55,
+            0.6639,
+            0.5491,
+            "[0.803 ,0.2069]"
+        ],
+        "round_2": [
+            1358,
+            146,
+            32,
+            53,
+            0.6808,
+            0.5637,
+            "[0.8073,0.2241]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6808,
+        "F_aucpr": 0.5637,
+        "F_f1": "[0.8073,0.2241]"
+    }
+}

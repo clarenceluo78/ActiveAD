@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "WAAL",
+    "model": "WAAL",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            104,
+            35,
+            32,
+            35,
+            0.6455,
+            0.4958,
+            "[0.7946,0.    ]"
+        ],
+        "round_1": [
+            136,
+            58,
+            32,
+            23,
+            0.6444,
+            0.4828,
+            "[0.754 ,0.4211]"
+        ],
+        "round_2": [
+            168,
+            71,
+            32,
+            13,
+            0.6558,
+            0.4861,
+            "[0.7764,0.4194]"
+        ],
+        "round_3": [
+            200,
+            83,
+            32,
+            12,
+            0.6598,
+            0.4816,
+            "[0.7818,0.2871]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6598,
+        "F_aucpr": 0.4816,
+        "F_f1": "[0.7818,0.2871]"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "dataset": "12_fault",
+    "strategy": "MetaSampling",
+    "model": "XGBOD",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 140,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            136,
+            38,
+            32,
+            38,
+            0.7056,
+            0.5099,
+            "[0.7859,0.1379]"
+        ],
+        "round_1": [
+            200,
+            72,
+            32,
+            34,
+            0.759,
+            0.6571,
+            "[0.8116,0.2414]"
+        ],
+        "round_2": [
+            264,
+            107,
+            32,
+            35,
+            0.7644,
+            0.6676,
+            "[0.8094,0.2328]"
+        ],
+        "round_3": [
+            328,
+            142,
+            32,
+            35,
+            0.7413,
+            0.6318,
+            "[0.8073,0.2241]"
+        ],
+        "round_4": [
+            392,
+            174,
+            32,
+            32,
+            0.745,
+            0.6267,
+            "[0.8051,0.2155]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.745,
+        "F_aucpr": 0.6267,
+        "F_f1": "[0.8051,0.2155]"
+    }
+}

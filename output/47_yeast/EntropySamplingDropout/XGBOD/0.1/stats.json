@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "EntropySamplingDropout",
+    "model": "XGBOD",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            104,
+            35,
+            32,
+            35,
+            0.6133,
+            0.4197,
+            "[0.7838,0.1143]"
+        ],
+        "round_1": [
+            136,
+            56,
+            32,
+            21,
+            0.6544,
+            0.4857,
+            "[0.8006,0.1829]"
+        ],
+        "round_2": [
+            168,
+            76,
+            32,
+            20,
+            0.6362,
+            0.4796,
+            "[0.7978,0.1714]"
+        ],
+        "round_3": [
+            200,
+            91,
+            32,
+            15,
+            0.6613,
+            0.4883,
+            "[0.795,0.16 ]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6613,
+        "F_aucpr": 0.4883,
+        "F_f1": "[0.795,0.16 ]"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "dataset": "12_fault",
+    "strategy": "RandomSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 136,
+    "budget": 70,
+    "budget_ratio": 0.05,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 27,
+    "train_size": 1358,
+    "test_size": 583,
+    "all_train_outliers": 471,
+    "process": {
+        "round_0": [
+            1358,
+            38,
+            32,
+            38,
+            0.6538,
+            0.5086,
+            "[0.7923,0.1638]"
+        ],
+        "round_1": [
+            1358,
+            45,
+            32,
+            7,
+            0.6514,
+            0.4979,
+            "[0.7966,0.181 ]"
+        ],
+        "round_2": [
+            1358,
+            59,
+            32,
+            14,
+            0.653,
+            0.4987,
+            "[0.788 ,0.1466]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.653,
+        "F_aucpr": 0.4987,
+        "F_f1": "[0.788 ,0.1466]"
+    }
+}

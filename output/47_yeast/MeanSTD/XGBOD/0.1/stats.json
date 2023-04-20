@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "MeanSTD",
+    "model": "XGBOD",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            104,
+            35,
+            32,
+            35,
+            0.6133,
+            0.4197,
+            "[0.7838,0.1143]"
+        ],
+        "round_1": [
+            136,
+            52,
+            32,
+            17,
+            0.5899,
+            0.3914,
+            "[0.7755,0.08  ]"
+        ],
+        "round_2": [
+            168,
+            64,
+            32,
+            12,
+            0.6147,
+            0.3977,
+            "[0.7838,0.1143]"
+        ],
+        "round_3": [
+            200,
+            77,
+            32,
+            13,
+            0.6546,
+            0.4725,
+            "[0.7866,0.1257]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6546,
+        "F_aucpr": 0.4725,
+        "F_f1": "[0.7866,0.1257]"
+    }
+}

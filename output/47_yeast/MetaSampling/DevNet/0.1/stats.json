@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "MetaSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            1038,
+            35,
+            32,
+            35,
+            0.6869,
+            0.5424,
+            "[0.8006,0.1829]"
+        ],
+        "round_1": [
+            1038,
+            69,
+            32,
+            34,
+            0.6997,
+            0.5745,
+            "[0.8061,0.2057]"
+        ],
+        "round_2": [
+            1038,
+            101,
+            32,
+            32,
+            0.6537,
+            0.4719,
+            "[0.7922,0.1486]"
+        ],
+        "round_3": [
+            1038,
+            136,
+            32,
+            35,
+            0.6334,
+            0.4544,
+            "[0.7866,0.1257]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.6334,
+        "F_aucpr": 0.4544,
+        "F_f1": "[0.7866,0.1257]"
+    }
+}

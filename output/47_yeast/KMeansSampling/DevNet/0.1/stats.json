@@ -1,0 +1,61 @@
+{
+    "dataset": "47_yeast",
+    "strategy": "KMeansSampling",
+    "model": "DevNet",
+    "seed": 0,
+    "disable_tqdm": false,
+    "use_cuda": true,
+    "n_epoch": 50,
+    "init_labeled": 104,
+    "budget": 100,
+    "budget_ratio": 0.1,
+    "batch_size": 32,
+    "model_batch_size": 512,
+    "input_dim": 8,
+    "train_size": 1038,
+    "test_size": 446,
+    "all_train_outliers": 355,
+    "process": {
+        "round_0": [
+            1038,
+            35,
+            32,
+            35,
+            0.6864,
+            0.5404,
+            "[0.8033,0.1943]"
+        ],
+        "round_1": [
+            1038,
+            49,
+            32,
+            14,
+            0.6843,
+            0.5478,
+            "[0.8061,0.2057]"
+        ],
+        "round_2": [
+            1038,
+            62,
+            32,
+            13,
+            0.6818,
+            0.5288,
+            "[0.8033,0.1943]"
+        ],
+        "round_3": [
+            1038,
+            74,
+            32,
+            12,
+            0.678,
+            0.512,
+            "[0.8006,0.1829]"
+        ]
+    },
+    "metrics": {
+        "F-aucroc": 0.678,
+        "F_aucpr": 0.512,
+        "F_f1": "[0.8006,0.1829]"
+    }
+}
