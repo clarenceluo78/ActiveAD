@@ -1,6 +1,6 @@
-# ActiveAD: Human-in-the-loop Active Anomaly Detection
+# ActiveAD: Active Learning for Tabular Anomaly Detection
 
-ActiveAD is a human-in-the-loop active anomaly detection framework that leverages both machine learning models and human expertise to improve the efficiency and accuracy of detecting anomalies in complex domains.
+Detecting anomalies in tabular data is critical in many fields, including cybersecurity, finance, and healthcare. However, labeling data for anomaly detection is often labor-intensive and costly. *Active learning* (AL) emerges as a promising approach to mitigate these challenges, aiming to reduce the labeling cost while maintaining high detection performance. In our project, we propose a pipeline, ActiveAD, for active anomaly detection that combines various anomaly detection models and active learning querying strategies to improve the efficiency and effectiveness of identifying anomalies with limited labeled data. Benefiting from the recent study on anomaly detection benchmark, we also offer a comprehensive comparison of different active learning method performance on diverse datasets. Extensive experiments reveal the strengths and weaknesses of each method and the impact of outliers, providing valuable insights into their suitability under different conditions. 
 
 ## Table of Contents
 
