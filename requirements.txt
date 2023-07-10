@@ -13,7 +13,7 @@ glog==0.3.1
 google-auth==2.14.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
-grpcio==1.50.0
+grpcio==1.53.0
 h5py==3.7.0
 keras==2.10.0
 keras-preprocessing==1.1.2
